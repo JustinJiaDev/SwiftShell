@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		D021EF5B1CC1A9A00071A3A6 /* SwiftShell.h in Headers */ = {isa = PBXBuildFile; fileRef = D021EF5A1CC1A9A00071A3A6 /* SwiftShell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D021EF621CC1A9A10071A3A6 /* SwiftShell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D021EF571CC1A9A00071A3A6 /* SwiftShell.framework */; };
-		D021EF671CC1A9A10071A3A6 /* SwiftShellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D021EF661CC1A9A10071A3A6 /* SwiftShellTests.swift */; };
 		D0997B651CC1C4B800D9BC6A /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0997B641CC1C4B800D9BC6A /* List.swift */; };
 		D0997B671CC1C4CC00D9BC6A /* Execute.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0997B661CC1C4CC00D9BC6A /* Execute.swift */; };
-		D0997B691CC1CAC300D9BC6A /* Open.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0997B681CC1CAC300D9BC6A /* Open.swift */; };
+		D0997B691CC1CAC300D9BC6A /* OpenDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0997B681CC1CAC300D9BC6A /* OpenDirectory.swift */; };
 		D0997B6B1CC1CB8200D9BC6A /* PrintWorkingDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0997B6A1CC1CB8200D9BC6A /* PrintWorkingDirectory.swift */; };
 		D0997B6D1CC1CBCD00D9BC6A /* Echo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0997B6C1CC1CBCD00D9BC6A /* Echo.swift */; };
+		D0ACE6831CF1317000DA5F2C /* Pipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ACE6821CF1317000DA5F2C /* Pipe.swift */; };
+		D0ACE6851CF1321200DA5F2C /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ACE6841CF1321200DA5F2C /* Task.swift */; };
+		D0ACE6871CF13D1F00DA5F2C /* Git.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ACE6861CF13D1F00DA5F2C /* Git.swift */; };
+		D0ACE68B1CF13F3F00DA5F2C /* Which.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ACE68A1CF13F3F00DA5F2C /* Which.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,13 +35,16 @@
 		D021EF5A1CC1A9A00071A3A6 /* SwiftShell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftShell.h; sourceTree = "<group>"; };
 		D021EF5C1CC1A9A00071A3A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D021EF611CC1A9A10071A3A6 /* SwiftShellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftShellTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D021EF661CC1A9A10071A3A6 /* SwiftShellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftShellTests.swift; sourceTree = "<group>"; };
 		D021EF681CC1A9A10071A3A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0997B641CC1C4B800D9BC6A /* List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		D0997B661CC1C4CC00D9BC6A /* Execute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Execute.swift; sourceTree = "<group>"; };
-		D0997B681CC1CAC300D9BC6A /* Open.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Open.swift; sourceTree = "<group>"; };
+		D0997B681CC1CAC300D9BC6A /* OpenDirectory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenDirectory.swift; sourceTree = "<group>"; };
 		D0997B6A1CC1CB8200D9BC6A /* PrintWorkingDirectory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrintWorkingDirectory.swift; sourceTree = "<group>"; };
 		D0997B6C1CC1CBCD00D9BC6A /* Echo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Echo.swift; sourceTree = "<group>"; };
+		D0ACE6821CF1317000DA5F2C /* Pipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pipe.swift; sourceTree = "<group>"; };
+		D0ACE6841CF1321200DA5F2C /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		D0ACE6861CF13D1F00DA5F2C /* Git.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Git.swift; sourceTree = "<group>"; };
+		D0ACE68A1CF13F3F00DA5F2C /* Which.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Which.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,10 +89,14 @@
 			children = (
 				D021EF5A1CC1A9A00071A3A6 /* SwiftShell.h */,
 				D0997B641CC1C4B800D9BC6A /* List.swift */,
-				D0997B681CC1CAC300D9BC6A /* Open.swift */,
+				D0997B681CC1CAC300D9BC6A /* OpenDirectory.swift */,
 				D0997B6A1CC1CB8200D9BC6A /* PrintWorkingDirectory.swift */,
 				D0997B6C1CC1CBCD00D9BC6A /* Echo.swift */,
+				D0ACE6861CF13D1F00DA5F2C /* Git.swift */,
+				D0ACE68A1CF13F3F00DA5F2C /* Which.swift */,
 				D0997B661CC1C4CC00D9BC6A /* Execute.swift */,
+				D0ACE6821CF1317000DA5F2C /* Pipe.swift */,
+				D0ACE6841CF1321200DA5F2C /* Task.swift */,
 				D021EF5C1CC1A9A00071A3A6 /* Info.plist */,
 			);
 			path = SwiftShell;
@@ -95,7 +105,6 @@
 		D021EF651CC1A9A10071A3A6 /* SwiftShellTests */ = {
 			isa = PBXGroup;
 			children = (
-				D021EF661CC1A9A10071A3A6 /* SwiftShellTests.swift */,
 				D021EF681CC1A9A10071A3A6 /* Info.plist */,
 			);
 			path = SwiftShellTests;
@@ -209,11 +218,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0ACE6851CF1321200DA5F2C /* Task.swift in Sources */,
 				D0997B671CC1C4CC00D9BC6A /* Execute.swift in Sources */,
+				D0ACE68B1CF13F3F00DA5F2C /* Which.swift in Sources */,
+				D0ACE6831CF1317000DA5F2C /* Pipe.swift in Sources */,
 				D0997B651CC1C4B800D9BC6A /* List.swift in Sources */,
 				D0997B6B1CC1CB8200D9BC6A /* PrintWorkingDirectory.swift in Sources */,
-				D0997B691CC1CAC300D9BC6A /* Open.swift in Sources */,
+				D0997B691CC1CAC300D9BC6A /* OpenDirectory.swift in Sources */,
 				D0997B6D1CC1CBCD00D9BC6A /* Echo.swift in Sources */,
+				D0ACE6871CF13D1F00DA5F2C /* Git.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,7 +234,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D021EF671CC1A9A10071A3A6 /* SwiftShellTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

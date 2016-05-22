@@ -8,18 +8,10 @@
 
 import Foundation
 
-public func execute(path: String, arguments: [String]) -> String {
-    let task = NSTask()
-    
-    task.launchPath = path
-    task.arguments = arguments
-    
-    let pipe = NSPipe()
-    task.standardOutput = pipe
-    task.launch()
-    
-    let data = pipe.fileHandleForReading.readDataToEndOfFile()
-    let output = String(data: data, encoding: NSUTF8StringEncoding) ?? ""
-    
-    return output
+public func execute(command command: String, arguments: [String], input: String? = nil) -> String {
+    return execute(path: String(which(command).characters.dropLast()), arguments: arguments, input: input)
+}
+
+func execute(path path: String, arguments: [String], input: String? = nil) -> String {
+    return Task.run(path, arguments: arguments, input: Input(inputString: input)).outputString ?? ""
 }

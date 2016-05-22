@@ -1,0 +1,18 @@
+//
+//  Which.swift
+//  SwiftShell
+//
+//  Created by Justin Jia on 5/21/16.
+//  Copyright © 2016 SwiftShell. All rights reserved.
+//
+
+import Foundation
+
+public enum WhichOption: String {
+    case all = "-a"
+    case silent = "-s"
+}
+
+public func which(name: String, options: WhichOption...) -> String {
+    return execute(path: "/usr/bin/which", arguments: options.map { $0.rawValue } + [name])
+}

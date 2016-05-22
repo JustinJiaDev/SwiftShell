@@ -15,6 +15,6 @@ public enum ListOption: String {
 
 public let ls = list
 
-public func list(options: ListOption ...) -> String {
-    return execute("/bin/ls", arguments: options.map { $0.rawValue })
+public func list(options: ListOption...) -> String {
+    return execute(command: "ls", arguments: options.map { $0.rawValue })
 }
