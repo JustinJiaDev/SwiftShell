@@ -8,7 +8,6 @@
 
 import Foundation
 
-public typealias Pipe = NSPipe
 public typealias Input = Pipe
 public typealias Output = Pipe
 
@@ -52,21 +51,19 @@ extension Pipe {
 
 }
 
-public typealias FileHandle = NSFileHandle
-
-extension NSFileHandle {
+extension FileHandle {
 
     func readString() -> String? {
-        return String(data: readDataToEndOfFile(), encoding: NSUTF8StringEncoding)
+        return String(data: readDataToEndOfFile(), encoding: .utf8)
     }
 
-    func writeString(string: String?) {
-        guard let data = string?.dataUsingEncoding(NSUTF8StringEncoding) else {
+    func writeString(_ string: String?) {
+        guard let data = string?.data(using: .utf8) else {
             return
         }
-        seekToFileOffset(0)
-        writeData(data)
-        truncateFileAtOffset(offsetInFile)
+        seek(toFileOffset: 0)
+        write(data)
+        truncateFile(atOffset: offsetInFile)
     }
 
 }

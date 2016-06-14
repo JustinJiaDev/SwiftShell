@@ -8,10 +8,6 @@
 
 import Foundation
 
-public func cd(name: String = String.fromCString(getenv("HOME")) ?? "/") {
-    openDirectory(name)
-}
-
-public func openDirectory(name: String = String.fromCString(getenv("HOME")) ?? "/") {
+public func cd(_ name: String = String(cString: getenv("HOME")) ?? "/") {
     chdir(name)
 }

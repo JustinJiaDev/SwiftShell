@@ -8,10 +8,10 @@
 
 import Foundation
 
-public func execute(command command: String, arguments: [String], input: String? = nil) -> String {
+public func execute(command: String, arguments: [String], input: String? = nil) -> String {
     return execute(path: String(which(command).characters.dropLast()), arguments: arguments, input: input)
 }
 
-func execute(path path: String, arguments: [String], input: String? = nil) -> String {
+func execute(path: String, arguments: [String], input: String? = nil) -> String {
     return Task.run(path, arguments: arguments, input: Input(inputString: input)).outputString ?? ""
 }

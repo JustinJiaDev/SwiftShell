@@ -7,7 +7,3 @@ cd()
 pwd()
 
 ls(.all, .longFormat)
-
-ls()
-
-ls(.all)

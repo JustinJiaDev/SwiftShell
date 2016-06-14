@@ -24,8 +24,8 @@ public typealias git = Git
 
 public class Git {
 
-    public static func git(command command: GitCommand, arguments: [String] = []) -> String {
-        return execute(command: "git", arguments: [command.rawValue] + arguments)
+    public static func git(command: GitCommand, arguments: [String] = []) -> String {
+        return execute(command: #function, arguments: [command.rawValue] + arguments)
     }
 
     public static func initialize() -> String {
@@ -36,7 +36,7 @@ public class Git {
         return git(command: .status)
     }
 
-    public static func add(name: String...) -> String {
+    public static func add(_ name: String...) -> String {
         return git(command: .add, arguments: name)
     }
 
@@ -44,7 +44,7 @@ public class Git {
         case all = "-a"
     }
 
-    public static func commit(message: String, options: CommitOption...) -> String {
+    public static func commit(_ message: String, options: CommitOption...) -> String {
         return git(command: .commit, arguments: ["-m", message] + options.map { $0.rawValue })
     }
 

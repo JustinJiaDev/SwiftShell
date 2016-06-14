@@ -8,11 +8,9 @@
 
 import Foundation
 
-public typealias Task = NSTask
+extension Task {
 
-extension NSTask {
-
-    static func run(path: String, arguments: [String] = [], output: Output? = nil, input: Input? = nil) -> Output {
+    static func run(_ path: String, arguments: [String] = [], output: Output? = nil, input: Input? = nil) -> Output {
         let output = output ?? Output()
 
         let task = Task()

@@ -8,10 +8,8 @@
 
 import Foundation
 
-public let pwd = printWorkingDirectory
-
-public func printWorkingDirectory() -> String {
-    var buffer: [Int8] = Array(count: Int(PATH_MAX), repeatedValue: 0)
+public func pwd() -> String {
+    var buffer: [Int8] = Array(repeating: 0, count: Int(PATH_MAX))
     getcwd(&buffer, buffer.count)
-    return String.fromCString(buffer) ?? ""
+    return String(cString: buffer) ?? ""
 }

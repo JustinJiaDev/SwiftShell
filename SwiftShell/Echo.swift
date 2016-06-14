@@ -8,6 +8,6 @@
 
 import Foundation
 
-public func echo(string: String) -> String {
-    return execute(command: "echo", arguments: [string])
+public func echo(_ string: String) -> String {
+    return execute(command: #function, arguments: [string])
 }

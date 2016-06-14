@@ -13,8 +13,6 @@ public enum ListOption: String {
     case longFormat = "-l"
 }
 
-public let ls = list
-
-public func list(options: ListOption...) -> String {
-    return execute(command: "ls", arguments: options.map { $0.rawValue })
+public func ls(_ options: ListOption...) -> String {
+    return execute(command: #function, arguments: options.map { $0.rawValue })
 }
