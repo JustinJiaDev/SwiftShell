@@ -3,7 +3,7 @@
 //  SwiftShell
 //
 //  Created by Justin Jia on 4/15/16.
-//  Copyright © 2016 SwiftShell. All rights reserved.
+//  Copyright © 2016 SwiftShell. The MIT License (MIT).
 //
 
 import Foundation
