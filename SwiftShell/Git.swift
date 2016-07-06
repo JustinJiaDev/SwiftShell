@@ -22,7 +22,7 @@ public enum GitCommand: String {
 
 public typealias git = Git
 
-public class Git {
+public enum Git {
 
     public static func git(command: GitCommand, arguments: [String] = []) -> String {
         return execute(command: #function, arguments: [command.rawValue] + arguments)
