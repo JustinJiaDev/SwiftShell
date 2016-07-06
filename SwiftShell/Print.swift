@@ -11,7 +11,7 @@ import Foundation
 func print(command: String, with arguments: [String]? = nil) {
     var output = "SwiftShell $ \(command)"
     if let arguments = arguments {
-        output += " " + arguments.reduce("", combine:+)
+        output += arguments.reduce("", combine: { $0 + " " + $1 })
     }
     print(output)
 }
