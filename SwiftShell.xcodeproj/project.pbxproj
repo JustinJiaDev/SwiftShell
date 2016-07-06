@@ -94,7 +94,7 @@
 				D078FC4E1D2CB21300706A2F /* Utility */,
 				D078FC4D1D2CB20300706A2F /* Command */,
 				D078FC4F1D2CB23100706A2F /* Shell */,
-				D021EF5C1CC1A9A00071A3A6 /* Info.plist */,
+				D078FC561D2CC68200706A2F /* Info */,
 			);
 			path = SwiftShell;
 			sourceTree = "<group>";
@@ -102,7 +102,7 @@
 		D021EF651CC1A9A10071A3A6 /* SwiftShellTests */ = {
 			isa = PBXGroup;
 			children = (
-				D021EF681CC1A9A10071A3A6 /* Info.plist */,
+				D078FC571D2CC68800706A2F /* Info */,
 			);
 			path = SwiftShellTests;
 			sourceTree = "<group>";
@@ -137,6 +137,22 @@
 				D078FC521D2CBC7900706A2F /* String.swift */,
 			);
 			name = Shell;
+			sourceTree = "<group>";
+		};
+		D078FC561D2CC68200706A2F /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				D021EF5C1CC1A9A00071A3A6 /* Info.plist */,
+			);
+			name = Info;
+			sourceTree = "<group>";
+		};
+		D078FC571D2CC68800706A2F /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				D021EF681CC1A9A10071A3A6 /* Info.plist */,
+			);
+			name = Info;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
