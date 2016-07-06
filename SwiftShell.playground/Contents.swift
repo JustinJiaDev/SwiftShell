@@ -9,11 +9,3 @@
 import SwiftShell
 
 echo("Hello, SwiftShell!")
-
-which("echo")
-
-cd()
-
-pwd()
-
-ls()
