@@ -36,6 +36,7 @@
 		D021EF5C1CC1A9A00071A3A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D021EF611CC1A9A10071A3A6 /* SwiftShellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftShellTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D021EF681CC1A9A10071A3A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D078FC4C1D2CB03500706A2F /* SwiftShell.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SwiftShell.playground; sourceTree = "<group>"; };
 		D0997B641CC1C4B800D9BC6A /* List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		D0997B661CC1C4CC00D9BC6A /* Execute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Execute.swift; sourceTree = "<group>"; };
 		D0997B681CC1CAC300D9BC6A /* OpenDirectory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenDirectory.swift; sourceTree = "<group>"; };
@@ -69,6 +70,7 @@
 		D021EF4D1CC1A9A00071A3A6 = {
 			isa = PBXGroup;
 			children = (
+				D078FC4C1D2CB03500706A2F /* SwiftShell.playground */,
 				D021EF591CC1A9A00071A3A6 /* SwiftShell */,
 				D021EF651CC1A9A10071A3A6 /* SwiftShellTests */,
 				D021EF581CC1A9A00071A3A6 /* Products */,
