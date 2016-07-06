@@ -13,6 +13,7 @@ public enum WhichOption: String {
     case silent = "-s"
 }
 
-public func which(_ name: String, options: WhichOption...) -> String {
-    return run(path: "/usr/bin/which", arguments: options.map { $0.rawValue } + [name])
+public func which(_ name: String, options: WhichOption...) -> String? {
+    return run("which", with: options.map { $0.rawValue } + [name])
 }
+

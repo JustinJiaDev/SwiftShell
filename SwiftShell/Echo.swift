@@ -9,5 +9,5 @@
 import Foundation
 
 public func echo(_ string: String) -> String {
-    return run(command: #function, arguments: [string])
+    return run("echo", with: [string])
 }

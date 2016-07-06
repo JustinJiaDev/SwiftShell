@@ -8,10 +8,18 @@
 
 import Foundation
 
-public func run(command: String, arguments: [String], input: String? = nil) -> String {
-    return run(path: String(which(command).characters.dropLast()), arguments: arguments, input: input)
+public func run(_ command: String, with arguments: [String], input: String? = nil) -> String {
+    print(command: command, with: arguments)
+    guard let path = path(of: command) else { return "Unknown Command" }
+    guard let output = run(at: path, with: arguments, input: input) else { return "" }
+    print(output.trimmedLastEndOfLine())
+    return output
 }
 
-func run(path: String, arguments: [String], input: String? = nil) -> String {
-    return Task.run(path, arguments: arguments, input: Pipe(inputString: input)).outputString ?? ""
+func run(at path: String, with arguments: [String], input: String? = nil) -> String? {
+    return Task.run(path, arguments: arguments, input: Pipe(inputString: input)).outputString
+}
+
+func path(of command: String) -> String? {
+    return run(at: "/usr/bin/which", with: [command])?.trimmedLastEndOfLine()
 }

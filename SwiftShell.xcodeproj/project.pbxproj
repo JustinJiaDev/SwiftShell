@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D021EF621CC1A9A10071A3A6 /* SwiftShell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D021EF571CC1A9A00071A3A6 /* SwiftShell.framework */; };
+		D078FC531D2CBC7900706A2F /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = D078FC521D2CBC7900706A2F /* String.swift */; };
+		D078FC551D2CBE6A00706A2F /* Print.swift in Sources */ = {isa = PBXBuildFile; fileRef = D078FC541D2CBE6A00706A2F /* Print.swift */; };
 		D0997B651CC1C4B800D9BC6A /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0997B641CC1C4B800D9BC6A /* List.swift */; };
 		D0997B671CC1C4CC00D9BC6A /* Run.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0997B661CC1C4CC00D9BC6A /* Run.swift */; };
 		D0997B691CC1CAC300D9BC6A /* OpenDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0997B681CC1CAC300D9BC6A /* OpenDirectory.swift */; };
@@ -35,6 +37,8 @@
 		D021EF611CC1A9A10071A3A6 /* SwiftShellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftShellTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D021EF681CC1A9A10071A3A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D078FC4C1D2CB03500706A2F /* SwiftShell.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SwiftShell.playground; sourceTree = "<group>"; };
+		D078FC521D2CBC7900706A2F /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		D078FC541D2CBE6A00706A2F /* Print.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Print.swift; sourceTree = "<group>"; };
 		D0997B641CC1C4B800D9BC6A /* List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		D0997B661CC1C4CC00D9BC6A /* Run.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Run.swift; sourceTree = "<group>"; };
 		D0997B681CC1CAC300D9BC6A /* OpenDirectory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenDirectory.swift; sourceTree = "<group>"; };
@@ -127,8 +131,10 @@
 		D078FC4F1D2CB23100706A2F /* Shell */ = {
 			isa = PBXGroup;
 			children = (
+				D078FC541D2CBE6A00706A2F /* Print.swift */,
 				D0ACE6821CF1317000DA5F2C /* Pipe.swift */,
 				D0ACE6841CF1321200DA5F2C /* Task.swift */,
+				D078FC521D2CBC7900706A2F /* String.swift */,
 			);
 			name = Shell;
 			sourceTree = "<group>";
@@ -244,6 +250,7 @@
 			files = (
 				D0ACE6851CF1321200DA5F2C /* Task.swift in Sources */,
 				D0997B671CC1C4CC00D9BC6A /* Run.swift in Sources */,
+				D078FC531D2CBC7900706A2F /* String.swift in Sources */,
 				D0ACE68B1CF13F3F00DA5F2C /* Which.swift in Sources */,
 				D0ACE6831CF1317000DA5F2C /* Pipe.swift in Sources */,
 				D0997B651CC1C4B800D9BC6A /* List.swift in Sources */,
@@ -251,6 +258,7 @@
 				D0997B691CC1CAC300D9BC6A /* OpenDirectory.swift in Sources */,
 				D0997B6D1CC1CBCD00D9BC6A /* Echo.swift in Sources */,
 				D0ACE6871CF13D1F00DA5F2C /* Git.swift in Sources */,
+				D078FC551D2CBE6A00706A2F /* Print.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

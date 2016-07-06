@@ -9,5 +9,6 @@
 import Foundation
 
 public func cd(_ name: String = String(cString: getenv("HOME")) ?? "/") {
+    print(command: "cd", with: [name])
     chdir(name)
 }

@@ -25,7 +25,7 @@ public typealias git = Git
 public enum Git {
 
     public static func git(command: GitCommand, arguments: [String] = []) -> String {
-        return run(command: #function, arguments: [command.rawValue] + arguments)
+        return run("git", with: [command.rawValue] + arguments)
     }
 
     public static func initialize() -> String {

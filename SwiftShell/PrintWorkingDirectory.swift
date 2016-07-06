@@ -9,7 +9,10 @@
 import Foundation
 
 public func pwd() -> String {
+    print(command: "pwd")
     var buffer: [Int8] = Array(repeating: 0, count: Int(PATH_MAX))
     getcwd(&buffer, buffer.count)
-    return String(cString: buffer) ?? ""
+    let output = String(cString: buffer) ?? ""
+    print(output)
+    return output
 }
