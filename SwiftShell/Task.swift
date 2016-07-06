@@ -10,8 +10,8 @@ import Foundation
 
 extension Task {
 
-    static func run(_ path: String, arguments: [String] = [], output: Output? = nil, input: Input? = nil) -> Output {
-        let output = output ?? Output()
+    static func run(_ path: String, arguments: [String] = [], output: Pipe? = nil, input: Pipe? = nil) -> Pipe {
+        let output = output ?? Pipe()
 
         let task = Task()
         task.launchPath = path

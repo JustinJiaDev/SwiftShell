@@ -8,9 +8,6 @@
 
 import Foundation
 
-public typealias Input = Pipe
-public typealias Output = Pipe
-
 extension Pipe {
 
     convenience init?(inputString: String?) {

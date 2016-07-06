@@ -13,5 +13,5 @@ public func execute(command: String, arguments: [String], input: String? = nil) 
 }
 
 func execute(path: String, arguments: [String], input: String? = nil) -> String {
-    return Task.run(path, arguments: arguments, input: Input(inputString: input)).outputString ?? ""
+    return Task.run(path, arguments: arguments, input: Pipe(inputString: input)).outputString ?? ""
 }
