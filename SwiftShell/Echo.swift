@@ -8,6 +8,10 @@
 
 import Foundation
 
-public func echo(_ string: String) -> String {
-    return run("echo", with: [string])
+public enum EchoOption: String {
+    case noNewline = "-n" // Do not print the trailing newline character.
+}
+
+public func echo(_ string: String, options: EchoOption...) -> String {
+    return run("echo", with: options.map { $0.rawValue } + [string])
 }
