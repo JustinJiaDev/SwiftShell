@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D021EF5B1CC1A9A00071A3A6 /* SwiftShell.h in Headers */ = {isa = PBXBuildFile; fileRef = D021EF5A1CC1A9A00071A3A6 /* SwiftShell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D021EF621CC1A9A10071A3A6 /* SwiftShell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D021EF571CC1A9A00071A3A6 /* SwiftShell.framework */; };
 		D0997B651CC1C4B800D9BC6A /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0997B641CC1C4B800D9BC6A /* List.swift */; };
 		D0997B671CC1C4CC00D9BC6A /* Execute.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0997B661CC1C4CC00D9BC6A /* Execute.swift */; };
@@ -32,7 +31,6 @@
 
 /* Begin PBXFileReference section */
 		D021EF571CC1A9A00071A3A6 /* SwiftShell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftShell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D021EF5A1CC1A9A00071A3A6 /* SwiftShell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftShell.h; sourceTree = "<group>"; };
 		D021EF5C1CC1A9A00071A3A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D021EF611CC1A9A10071A3A6 /* SwiftShellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftShellTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D021EF681CC1A9A10071A3A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -89,7 +87,6 @@
 		D021EF591CC1A9A00071A3A6 /* SwiftShell */ = {
 			isa = PBXGroup;
 			children = (
-				D021EF5A1CC1A9A00071A3A6 /* SwiftShell.h */,
 				D078FC4E1D2CB21300706A2F /* Utility */,
 				D078FC4D1D2CB20300706A2F /* Command */,
 				D078FC4F1D2CB23100706A2F /* Shell */,
@@ -143,7 +140,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D021EF5B1CC1A9A00071A3A6 /* SwiftShell.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
