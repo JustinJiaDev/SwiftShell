@@ -90,15 +90,9 @@
 			isa = PBXGroup;
 			children = (
 				D021EF5A1CC1A9A00071A3A6 /* SwiftShell.h */,
-				D0997B641CC1C4B800D9BC6A /* List.swift */,
-				D0997B681CC1CAC300D9BC6A /* OpenDirectory.swift */,
-				D0997B6A1CC1CB8200D9BC6A /* PrintWorkingDirectory.swift */,
-				D0997B6C1CC1CBCD00D9BC6A /* Echo.swift */,
-				D0ACE6861CF13D1F00DA5F2C /* Git.swift */,
-				D0ACE68A1CF13F3F00DA5F2C /* Which.swift */,
-				D0997B661CC1C4CC00D9BC6A /* Execute.swift */,
-				D0ACE6821CF1317000DA5F2C /* Pipe.swift */,
-				D0ACE6841CF1321200DA5F2C /* Task.swift */,
+				D078FC4E1D2CB21300706A2F /* Utility */,
+				D078FC4D1D2CB20300706A2F /* Command */,
+				D078FC4F1D2CB23100706A2F /* Shell */,
 				D021EF5C1CC1A9A00071A3A6 /* Info.plist */,
 			);
 			path = SwiftShell;
@@ -110,6 +104,36 @@
 				D021EF681CC1A9A10071A3A6 /* Info.plist */,
 			);
 			path = SwiftShellTests;
+			sourceTree = "<group>";
+		};
+		D078FC4D1D2CB20300706A2F /* Command */ = {
+			isa = PBXGroup;
+			children = (
+				D0997B681CC1CAC300D9BC6A /* OpenDirectory.swift */,
+				D0997B6A1CC1CB8200D9BC6A /* PrintWorkingDirectory.swift */,
+			);
+			name = Command;
+			sourceTree = "<group>";
+		};
+		D078FC4E1D2CB21300706A2F /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				D0997B641CC1C4B800D9BC6A /* List.swift */,
+				D0997B6C1CC1CBCD00D9BC6A /* Echo.swift */,
+				D0ACE6861CF13D1F00DA5F2C /* Git.swift */,
+				D0ACE68A1CF13F3F00DA5F2C /* Which.swift */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		D078FC4F1D2CB23100706A2F /* Shell */ = {
+			isa = PBXGroup;
+			children = (
+				D0997B661CC1C4CC00D9BC6A /* Execute.swift */,
+				D0ACE6821CF1317000DA5F2C /* Pipe.swift */,
+				D0ACE6841CF1321200DA5F2C /* Task.swift */,
+			);
+			name = Shell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
