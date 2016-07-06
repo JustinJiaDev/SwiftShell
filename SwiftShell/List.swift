@@ -14,5 +14,5 @@ public enum ListOption: String {
 }
 
 public func ls(_ options: ListOption...) -> String {
-    return execute(command: #function, arguments: options.map { $0.rawValue })
+    return run(command: #function, arguments: options.map { $0.rawValue })
 }

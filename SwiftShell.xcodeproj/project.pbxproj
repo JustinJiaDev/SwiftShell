@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		D021EF621CC1A9A10071A3A6 /* SwiftShell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D021EF571CC1A9A00071A3A6 /* SwiftShell.framework */; };
 		D0997B651CC1C4B800D9BC6A /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0997B641CC1C4B800D9BC6A /* List.swift */; };
-		D0997B671CC1C4CC00D9BC6A /* Execute.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0997B661CC1C4CC00D9BC6A /* Execute.swift */; };
+		D0997B671CC1C4CC00D9BC6A /* Run.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0997B661CC1C4CC00D9BC6A /* Run.swift */; };
 		D0997B691CC1CAC300D9BC6A /* OpenDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0997B681CC1CAC300D9BC6A /* OpenDirectory.swift */; };
 		D0997B6B1CC1CB8200D9BC6A /* PrintWorkingDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0997B6A1CC1CB8200D9BC6A /* PrintWorkingDirectory.swift */; };
 		D0997B6D1CC1CBCD00D9BC6A /* Echo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0997B6C1CC1CBCD00D9BC6A /* Echo.swift */; };
@@ -36,7 +36,7 @@
 		D021EF681CC1A9A10071A3A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D078FC4C1D2CB03500706A2F /* SwiftShell.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SwiftShell.playground; sourceTree = "<group>"; };
 		D0997B641CC1C4B800D9BC6A /* List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
-		D0997B661CC1C4CC00D9BC6A /* Execute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Execute.swift; sourceTree = "<group>"; };
+		D0997B661CC1C4CC00D9BC6A /* Run.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Run.swift; sourceTree = "<group>"; };
 		D0997B681CC1CAC300D9BC6A /* OpenDirectory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenDirectory.swift; sourceTree = "<group>"; };
 		D0997B6A1CC1CB8200D9BC6A /* PrintWorkingDirectory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrintWorkingDirectory.swift; sourceTree = "<group>"; };
 		D0997B6C1CC1CBCD00D9BC6A /* Echo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Echo.swift; sourceTree = "<group>"; };
@@ -108,7 +108,7 @@
 			children = (
 				D0997B681CC1CAC300D9BC6A /* OpenDirectory.swift */,
 				D0997B6A1CC1CB8200D9BC6A /* PrintWorkingDirectory.swift */,
-				D0997B661CC1C4CC00D9BC6A /* Execute.swift */,
+				D0997B661CC1C4CC00D9BC6A /* Run.swift */,
 			);
 			name = Command;
 			sourceTree = "<group>";
@@ -243,7 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0ACE6851CF1321200DA5F2C /* Task.swift in Sources */,
-				D0997B671CC1C4CC00D9BC6A /* Execute.swift in Sources */,
+				D0997B671CC1C4CC00D9BC6A /* Run.swift in Sources */,
 				D0ACE68B1CF13F3F00DA5F2C /* Which.swift in Sources */,
 				D0ACE6831CF1317000DA5F2C /* Pipe.swift in Sources */,
 				D0997B651CC1C4B800D9BC6A /* List.swift in Sources */,
