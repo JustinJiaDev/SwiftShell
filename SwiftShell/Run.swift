@@ -17,7 +17,7 @@ public func run(_ command: String, with arguments: [String], input: String? = ni
 }
 
 func run(at path: String, with arguments: [String], input: String? = nil) -> String? {
-    return Task.run(path, arguments: arguments, input: Pipe(inputString: input)).outputString
+    return Task.run(path: path, arguments: arguments, input: Pipe(inputString: input)).outputString
 }
 
 func path(of command: String) -> String? {

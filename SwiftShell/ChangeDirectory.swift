@@ -1,5 +1,5 @@
 //
-//  OpenDirectory.swift
+//  ChangeDirectory.swift
 //  SwiftShell
 //
 //  Created by Justin Jia on 4/15/16.
