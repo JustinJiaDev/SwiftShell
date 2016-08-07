@@ -8,30 +8,10 @@
 
 import SwiftShell
 
-var a = 2
+func sayHello(personName: String) -> String {
+    let greeting = "Hello, " + personName + "!"
+    return greeting
+}
 
-var myVar: Int = 50
+print(sayHello(personName: "hooman"))
 
-print(a)
-
-Int(a)
-
-pwd()
-
-ls()
-
-git .status()
-
-cd("Documents")
-
-cd("github")
-
-ls()
-
-cd("/Users/hmohammadi/Documents/github/hooman96.github.io")
-
-pwd()
-
-git .status()
-
-git .log()
