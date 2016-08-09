@@ -26,7 +26,7 @@ func currentPath(folding: Bool = false, unlessExceeds limit: Int? = nil) -> Stri
     guard pathComponents.count > 2 else { return output }
     
     if let firstPathComponents = pathComponents.first, let lastPathComponents = pathComponents.last {
-        output = firstPathComponents + "/.../" + lastPathComponents
+        output = "/" + firstPathComponents + "/.../" + lastPathComponents
     }
     
     return output
