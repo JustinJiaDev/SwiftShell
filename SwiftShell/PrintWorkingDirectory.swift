@@ -23,6 +23,8 @@ func currentPath(folding: Bool = false, unlessExceeds limit: Int? = nil) -> Stri
     guard folding == true, limit == nil || limit > output.characters.count else { return output }
     
     let pathComponents = output.characters.split { $0 == "/" }.map(String.init)
+    guard pathComponents.count > 2 else { return output }
+    
     if let firstPathComponents = pathComponents.first, let lastPathComponents = pathComponents.last {
         output = firstPathComponents + "/.../" + lastPathComponents
     }
