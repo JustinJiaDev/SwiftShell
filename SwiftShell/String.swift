@@ -11,7 +11,7 @@ import Foundation
 extension String {
     
     func trimmedLastEndOfLine() -> String {
-        guard let lastCharacter = self.characters.last, lastCharacter == "\n" else { return self }
+        guard let lastCharacter = self.characters.last where lastCharacter == "\n" else { return self }
         return String(characters.dropLast())
     }
     
