@@ -53,10 +53,6 @@ public enum Git {
         case create = "-b"
     }
     
-//    public static func checkout(_request: String: options: ) -> {
-//        return git(command: .checkout, arguments: ["-b", ] +
-//    }
-    
     public static func log() -> String {
         return git(command: .log)
     }

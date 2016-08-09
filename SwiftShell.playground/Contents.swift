@@ -8,10 +8,4 @@
 
 import SwiftShell
 
-func sayHello(personName: String) -> String {
-    let greeting = "Hello, " + personName + "!"
-    return greeting
-}
-
-print(sayHello(personName: "hooman"))
-
+echo("Hello, SwiftShell!")
