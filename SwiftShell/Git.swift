@@ -14,7 +14,6 @@ public enum GitCommand: String {
     case status = "status"
     case add = "add"
     case commit = "commit"
-    case checkout = "checkout"
     case branch = "branch"
     case rebase = "rebase"
     case log = "log"
@@ -47,10 +46,6 @@ public enum Git {
 
     public static func commit(_ message: String, options: CommitOption...) -> String {
         return git(command: .commit, arguments: ["-m", message] + options.map { $0.rawValue })
-    }
-    
-    public enum CheckOutOption: String {
-        case create = "-b"
     }
     
     public static func log() -> String {

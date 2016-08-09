@@ -8,20 +8,22 @@
 
 import Foundation
 
-let foldingLimit:Int = 15
-
-public func pwd(folding: Bool = false) -> String {
-    print(command: "pwd")
+public func pwd(folding: Bool = false, unlessExceeds limit: Int? = nil) -> String {
+    defer {
+        print(command: "pwd")
+        print(output)
+    }
+    
     var buffer: [Int8] = Array(repeating: 0, count: Int(PATH_MAX))
     getcwd(&buffer, buffer.count)
     var output = String(cString: buffer) ?? ""
     
-    let pathComponents = output.characters.split{ $0 == "/" }.map(String.init)
-
-    if let firstPathComponents = pathComponents.first, let lastPathComponents = pathComponents.last, folding == true, output.characters.count > foldingLimit {
+    guard folding == true, limit == nil || limit > output.characters.count else { return output }
+    
+    let pathComponents = output.characters.split { $0 == "/" }.map(String.init)
+    if let firstPathComponents = pathComponents.first, let lastPathComponents = pathComponents.last {
         output = firstPathComponents + "/.../" + lastPathComponents
     }
-    
-    print(output)
+
     return output
 }
