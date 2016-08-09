@@ -9,11 +9,13 @@
 import Foundation
 
 public func pwd(folding: Bool = false, unlessExceeds limit: Int? = nil) -> String {
-    defer {
-        print(command: "pwd")
-        print(output)
-    }
-    
+    print(command: "pwd")
+    let output = currentPath(folding: folding, unlessExceeds: limit)
+    print(output)
+    return output
+}
+
+func currentPath(folding: Bool = false, unlessExceeds limit: Int? = nil) -> String {
     var buffer: [Int8] = Array(repeating: 0, count: Int(PATH_MAX))
     getcwd(&buffer, buffer.count)
     var output = String(cString: buffer) ?? ""
@@ -24,6 +26,6 @@ public func pwd(folding: Bool = false, unlessExceeds limit: Int? = nil) -> Strin
     if let firstPathComponents = pathComponents.first, let lastPathComponents = pathComponents.last {
         output = firstPathComponents + "/.../" + lastPathComponents
     }
-
+    
     return output
 }
