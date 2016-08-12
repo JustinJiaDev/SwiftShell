@@ -9,13 +9,7 @@
 import Foundation
 
 public enum GitCommand: String {
-    case initialize = "init"
-    case status = "status"
-    case add = "add"
-    case commit = "commit"
-    case branch = "branch"
-    case rebase = "rebase"
-    case log = "log"
+    case initialize = "init", status, add, commit, branch, rebase, log
 }
 
 public typealias git = Git

@@ -9,7 +9,7 @@
 import Foundation
 
 public enum EchoOption: String {
-    case noNewline = "-n" // Do not print the trailing newline character.
+    case noNewline = "-n"
 }
 
 public func echo(_ string: String, options: EchoOption...) -> String {

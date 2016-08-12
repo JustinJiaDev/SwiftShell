@@ -11,17 +11,13 @@ import Foundation
 extension Pipe {
 
     convenience init?(inputString: String?) {
-        guard let inputString = inputString else {
-            return nil
-        }
+        guard let inputString = inputString else { return nil }
         self.init()
         self.inputString = inputString
     }
 
     convenience init?(outputString: String?) {
-        guard let outputString = outputString else {
-            return nil
-        }
+        guard let outputString = outputString else { return nil }
         self.init()
         self.outputString = outputString
     }
@@ -30,7 +26,6 @@ extension Pipe {
         set {
             fileHandleForReading.writeString(newValue)
         }
-
         get {
             return fileHandleForReading.readString()
         }
@@ -40,7 +35,6 @@ extension Pipe {
         set {
             fileHandleForWriting.writeString(newValue)
         }
-
         get {
             return fileHandleForWriting.readString()
         }
@@ -55,9 +49,7 @@ extension FileHandle {
     }
 
     func writeString(_ string: String?) {
-        guard let data = string?.data(using: .utf8) else {
-            return
-        }
+        guard let data = string?.data(using: .utf8) else { return }
         seek(toFileOffset: 0)
         write(data)
         truncateFile(atOffset: offsetInFile)
