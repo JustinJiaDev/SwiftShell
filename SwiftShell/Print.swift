@@ -9,7 +9,7 @@
 import Foundation
 
 func print(command: String, with arguments: [String]? = nil) {
-    var output = "\(currentPath(folding: true)) $ \(command)"
+    var output = "\(Process.currentPath(folding: true)) $ \(command)"
     if let arguments = arguments {
         output += arguments.reduce("", { $0 + " " + $1 })
     }
