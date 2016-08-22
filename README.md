@@ -10,7 +10,7 @@ Can we use Xcode as our terminal?
 
 ## Build Process
 
-1. Install Xcode 8 (beta 4 and above).
+1. Install Xcode 8 (beta 6 and above).
 2. Clone this repository or download the zip file.
 3. Open `SwiftShell.xcodeproj`.
 4. `Command + B` to build the framework ([Reason](https://developer.apple.com/library/ios/recipes/Playground_Help/Chapters/ImportFramework.html)).
