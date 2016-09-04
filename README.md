@@ -8,7 +8,7 @@ We want to execute commands just like how we write our code.
 
 Can we use Xcode as our terminal?
 
-## Build Process
+## Getting Started
 
 1. Install Xcode 8 (beta 6 and above).
 2. Clone this repository or download the zip file.
@@ -17,6 +17,10 @@ Can we use Xcode as our terminal?
 5. Select `SwiftShell.playground`.
 
 ![Example](https://cloud.githubusercontent.com/assets/3337361/17514176/bf2654c6-5e63-11e6-94bb-7f26bc151753.png)
+
+## Maintainers
+
+SwiftShell is developed and maintained by [Justin Jia](https://github.com/JustinJiaDev) and [Hooman Mohammadi](https://github.com/hooman96).
 
 ## Licensing
 
