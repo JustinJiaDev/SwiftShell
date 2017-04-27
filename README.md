@@ -17,11 +17,3 @@ Can we use Xcode as our terminal?
 5. Select `SwiftShell.playground`.
 
 ![Example](https://cloud.githubusercontent.com/assets/3337361/17514176/bf2654c6-5e63-11e6-94bb-7f26bc151753.png)
-
-## Maintainers
-
-SwiftShell is developed and maintained by [Justin Jia](https://github.com/JustinJiaDev) and [Hooman Mohammadi](https://github.com/hooman96).
-
-## Licensing
-
-SwiftShell is released under the MIT license. See [LICENSE.md](LICENSE.md) for details.
