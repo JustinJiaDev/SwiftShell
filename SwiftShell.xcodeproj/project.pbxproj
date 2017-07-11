@@ -68,25 +68,25 @@
 		D021EF591CC1A9A00071A3A6 /* SwiftShell */ = {
 			isa = PBXGroup;
 			children = (
-				D078FC4E1D2CB21300706A2F /* Utility */,
-				D078FC4D1D2CB20300706A2F /* Command */,
-				D078FC4F1D2CB23100706A2F /* Shell */,
+				D078FC4E1D2CB21300706A2F /* Utilities */,
+				D078FC4D1D2CB20300706A2F /* Commands */,
+				D078FC4F1D2CB23100706A2F /* Internals */,
 				D078FC561D2CC68200706A2F /* Info */,
 			);
 			path = SwiftShell;
 			sourceTree = "<group>";
 		};
-		D078FC4D1D2CB20300706A2F /* Command */ = {
+		D078FC4D1D2CB20300706A2F /* Commands */ = {
 			isa = PBXGroup;
 			children = (
 				D0997B681CC1CAC300D9BC6A /* ChangeDirectory.swift */,
 				D0997B6A1CC1CB8200D9BC6A /* PrintWorkingDirectory.swift */,
 				D0997B661CC1C4CC00D9BC6A /* Run.swift */,
 			);
-			name = Command;
+			path = Commands;
 			sourceTree = "<group>";
 		};
-		D078FC4E1D2CB21300706A2F /* Utility */ = {
+		D078FC4E1D2CB21300706A2F /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
 				D0997B641CC1C4B800D9BC6A /* List.swift */,
@@ -94,10 +94,10 @@
 				D0ACE6861CF13D1F00DA5F2C /* Git.swift */,
 				D0ACE68A1CF13F3F00DA5F2C /* Which.swift */,
 			);
-			name = Utility;
+			path = Utilities;
 			sourceTree = "<group>";
 		};
-		D078FC4F1D2CB23100706A2F /* Shell */ = {
+		D078FC4F1D2CB23100706A2F /* Internals */ = {
 			isa = PBXGroup;
 			children = (
 				D0ACE6821CF1317000DA5F2C /* Pipe.swift */,
@@ -105,7 +105,7 @@
 				D0ACE6841CF1321200DA5F2C /* Process.swift */,
 				D078FC521D2CBC7900706A2F /* String.swift */,
 			);
-			name = Shell;
+			path = Internals;
 			sourceTree = "<group>";
 		};
 		D078FC561D2CC68200706A2F /* Info */ = {
@@ -113,7 +113,7 @@
 			children = (
 				D021EF5C1CC1A9A00071A3A6 /* Info.plist */,
 			);
-			name = Info;
+			path = Info;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,7 +314,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SwiftShell/Info.plist;
+				INFOPLIST_FILE = SwiftShell/Info/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.swiftshell.SwiftShell;
@@ -332,7 +332,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SwiftShell/Info.plist;
+				INFOPLIST_FILE = SwiftShell/Info/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.swiftshell.SwiftShell;
