@@ -9,7 +9,6 @@
 import Foundation
 
 extension Pipe {
-
     convenience init?(inputString: String?) {
         guard let inputString = inputString else { return nil }
         self.init()
@@ -39,11 +38,9 @@ extension Pipe {
             return fileHandleForWriting.readString()
         }
     }
-
 }
 
 extension FileHandle {
-
     func readString() -> String? {
         return String(data: readDataToEndOfFile(), encoding: .utf8)
     }
@@ -54,5 +51,4 @@ extension FileHandle {
         write(data)
         truncateFile(atOffset: offsetInFile)
     }
-
 }

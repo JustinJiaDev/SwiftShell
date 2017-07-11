@@ -8,11 +8,11 @@
 
 import Foundation
 
-public enum LsOption: String {
+public enum LSOption: String {
     case all = "-a"
     case longFormat = "-l"
 }
 
-public func ls(_ options: LsOption...) -> String {
+public func ls(_ options: LSOption...) -> String {
     return run("ls", with: options.map { $0.rawValue })
 }

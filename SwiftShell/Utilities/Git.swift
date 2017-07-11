@@ -8,15 +8,17 @@
 
 import Foundation
 
-public enum GitCommand: String {
-    case initialize = "init", status, add, commit, branch, rebase, log
-}
+public enum git {
 
-public typealias git = Git
+    public enum Command: String {
+        case initialize = "init", status, add, commit, branch, rebase, log
+    }
 
-public enum Git {
+    public enum CommitOption: String {
+        case all = "-a"
+    }
 
-    public static func git(command: GitCommand, arguments: [String] = []) -> String {
+    public static func git(command: Command, arguments: [String] = []) -> String {
         return run("git", with: [command.rawValue] + arguments)
     }
 
@@ -32,14 +34,10 @@ public enum Git {
         return git(command: .add, arguments: name)
     }
 
-    public enum CommitOption: String {
-        case all = "-a"
-    }
-
     public static func commit(_ message: String, options: CommitOption...) -> String {
         return git(command: .commit, arguments: ["-m", message] + options.map { $0.rawValue })
     }
-    
+
     public static func log() -> String {
         return git(command: .log)
     }
